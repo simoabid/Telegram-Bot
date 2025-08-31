@@ -25,8 +25,8 @@ A comprehensive Telegram bot with multiple features including PornHub integratio
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd telegram-bot
+git clone https://github.com/simoabid/Telegram-Bot.git
+cd Telegram.Bot
 ```
 
 2. Install dependencies:
