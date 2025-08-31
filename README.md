@@ -1,41 +1,100 @@
+# Telegram Bot
 
-╭───〔 🌐  ÚNETE A LA COMUNIDAD 〕───╮
-│
-│ 🤖 *¿sᥲsᥙkᥱ ᑲ᥆𝗍 mძ?*
-│ Un bot inteligente para WhatsApp diseñado para
-│ *hacer tu vida más sencilla* y automatizar tus tareas.
-│
-│ 🔥 *Funciones destacadas:*
-│ ✅ Respuestas automáticas instantáneas
-│ 🌎 Compatible con múltiples idiomas
-│ 🔒 Protección avanzada para tu grupo
-│ 📡 Integraciones útiles y prácticas
-│ 📁 Gestión de archivos multimedia
-│ 🚀 Actualizaciones constantes
-│
-│ 📌 *¿Cómo empezar?*
-│ 1️⃣ Únete al canal oficial → [`Haz clic aquí`](https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18)
-│ 2️⃣ Escríbele algo al bot para activarlo
-│ 3️⃣ Explora comandos y funciones exclusivas
-│
-│ 🧠 *¿Tienes tu propio subbot?*
-│ Únete al grupo oficial de soporte y comunidad:
-│ 📬 [`Grupo de Subbots`](https://chat.whatsapp.com/DDtCymznMag3A7WTgwqT7X)
-│
-│ 👥 *Equipo de desarrollo:*
-│ 💫 [Barboza](https://Wa.me/584146277368)
-│ 👑 [Mediahub](https://Wa.me/51935848195)
-│ 🔹 [José](https://Wa.me/584245610338)
-│ 🎩 [Willzek](https://Wa.me/50557865603)
-│ 🔸 [Iván](https://Wa.me/59169739411)
-│
-│ 🔔 Sigue el proyecto y mantente al día:
-│ 📢 [`Canal de actualizaciones`](https://whatsapp.com/channel/0029Vb8kvXUBfxnzYWsbS81I)
-│
-╰────────────⊰ sᥲsᥙkᥱ ᑲ᥆𝗍 mძ ⊱────────────╯
-### `Delux Host 👑`
+A comprehensive Telegram bot with multiple features including PornHub integration, media downloads, games, and various utility functions.
 
-`Contacta`
+## 🌟 Features
 
-👑 [Sebas](https://Wa.me/5491166887146)
-👑 [Keni](https://Wa.me/5493865642938)
+- **PornHub Integration**: Search and browse PornHub content
+- **Media Downloads**: Download from TikTok, YouTube, Instagram, and more
+- **Games**: Various mini-games and entertainment features
+- **Group Management**: Advanced group moderation and management tools
+- **AI Integration**: Gemini AI and ChatGPT integration
+- **RPG System**: Complete role-playing game system
+- **Utility Tools**: Image processing, sticker creation, and more
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- Python 3.8+
+- Telegram Bot Token
+- Gemini AI API Key (optional)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd telegram-bot
+```
+
+2. Install dependencies:
+```bash
+npm install
+pip install -r requirements.txt
+```
+
+3. Configure your bot:
+   - Copy `telegram-config.js.example` to `telegram-config.js`
+   - Add your Telegram bot token and other configuration
+
+4. Run the bot:
+```bash
+node telegram-main.js
+```
+
+## 📁 Project Structure
+
+```
+├── telegram-plugins/     # Main bot plugins
+│   ├── index/           # Plugin files
+│   └── lib/             # Library files
+├── plugins/             # Additional plugins
+├── lib/                 # Core libraries
+├── storage/             # Data storage
+├── db/                  # Database files
+└── docs/                # Documentation
+```
+
+## 🔧 Configuration
+
+Edit `telegram-config.js` to configure:
+- Bot token
+- Owner IDs
+- Database settings
+- API keys
+
+## 📚 Documentation
+
+- [Setup Guide](START-HERE.md)
+- [Telegram Bot Guide](TELEGRAM-README.md)
+- [PornHub Integration](PORNHUB-INTEGRATION.md)
+- [Deployment Guide](DEPLOYMENT-GUIDE.md)
+- [Testing Guide](TESTING-GUIDE.md)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## ⚠️ Disclaimer
+
+This bot includes adult content features. Use responsibly and ensure compliance with local laws and platform terms of service.
+
+## 🆘 Support
+
+For support and questions:
+- Create an issue on GitHub
+- Check the documentation files
+- Review the setup guides
+
+---
+
+**Note**: This is a development project. Use at your own risk and ensure proper configuration before deployment.
