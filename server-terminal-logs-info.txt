@@ -1,0 +1,554 @@
+System Information
+===========================
+++ ISP : DigitalOcean, LLC
+++ Location : Singapore / SG
+---------------------------------
+++ OS : Debian GNU/Linux 12 (bookworm)
+++ Kernel : 6.1.0-26-amd64
+---------------------------------
+++ CPU : DO-Premium-AMD
+++ Core : 4 Core(s)
+++ Usage CPU : 100%
+++ Memory : 9.8Gi / 15Gi
+++ Disk (/) : 40G / 197G
+++ Uptime : 3 weeks, 4 days, 17 hours, 54 minutes
+++ Packages: 629 (dpkg)
+---------------------------------
+++ Nodejs Version : v23.11.1
+if [[ -d .git ]] && [[ ${AUTO_UPDATE} == "1" ]]; then git pull; fi; if [[ ! -z ${NODE_PACKAGES} ]]; then /usr/local/bin/npm install ${NODE_PACKAGES}; fi; if [[ ! -z ${UNNODE_PACKAGES} ]]; then /usr/local/bin/npm uninstall ${UNNODE_PACKAGES}; fi; if [ -f /home/container/package.json ]; then /usr/local/bin/npm install; fi; if [[ ! -z ${CUSTOM_ENVIRONMENT_VARIABLES} ]]; then vars=$(echo ${CUSTOM_ENVIRONMENT_VARIABLES} | tr ";" " "); for line in $vars; do export $line; done fi; /usr/local/bin/${CMD_RUN};
+
+> Barboza@2.2.0 postinstall
+> echo 'Node.js dependencies installed successfully'
+Node.js dependencies installed successfully
+
+up to date, audited 1336 packages in 55s
+
+185 packages are looking for funding
+  run `npm fund` for details
+
+62 vulnerabilities (2 low, 26 moderate, 27 high, 7 critical)
+To address issues that do not require attention, run:
+  npm audit fix
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+Some issues need review, and may require choosing
+a different dependency.
+Run `npm audit` for details.
+
+> Barboza@2.2.0 prestart
+> node server-startup-check.js
+🚀 Starting server deployment verification...
+1️⃣ Checking Node.js dependencies...
+   ✅ Node.js dependencies OK
+2️⃣ Checking Python environment...
+   🐍 Found Python: python3
+   📦 Installing Python dependencies...
+   ✅ Python environment OK
+3️⃣ Checking bot files...
+   ✅ All bot files present
+4️⃣ Checking environment variables...
+   ✅ Environment variables (using .env file)
+5️⃣ Testing Python integration...
+🐍 Testing Python command: python3
+✅ Found Python with pornhub-api: python3
+   🐍 Using Python: python3
+🐍 Executing: python3 "pornhub-bot.py" "categories"
+   ✅ Python integration works (162 categories loaded)
+📊 VERIFICATION SUMMARY:
+   ✅ Passed: 5/5 checks
+🎉 ALL CHECKS PASSED! Bot is ready to start!
+🚀 Server can now start the bot with: npm start
+💡 Note: Using .env file for bot token configuration
+
+> Barboza@2.2.0 start
+> node telegram-index.js
+
+              ███████╗ ███████╗ ██╗  ██╗         ████████╗  ██████╗ 
+              ██╔════╝ ██╔════╝ ██║ ██╔╝         ╚══██╔══╝ ██╔════╝ 
+              ███████╗ ███████╗ █████╔╝             ██║    ██║  ███╗
+              ╚════██║ ╚════██║ ██╔═██╗             ██║    ██║   ██║
+              ███████║ ███████║ ██║  ██╗            ██║    ╚██████╔╝
+              ╚══════╝ ╚══════╝ ╚═╝  ╚═╝            ╚═╝     ╚═════╝ 
+
+                              telegram bot  ssk  m
+🤖 Starting Telegram Bot Version...
+📱 Converted from WhatsApp to Telegram
+🚀 All functionality preserved!
+
+✅ Bot token found, starting...
+🤖 Starting Telegram Bot...
+📁 Plugin folder: ./telegram-plugins/index
+📂 Found 470 plugin files
+🚀 Telegram Bot is ready!
+✅ Loaded plugin: _Autodetect.js
+✅ Loaded plugin: _antiSpam.js.js
+✅ Loaded plugin: _antiara.js
+✅ Loaded plugin: _antiarabes.js
+✅ Loaded plugin: _antibot2.js
+✅ Loaded plugin: _antifakes.js
+✅ Loaded plugin: _antilink.js
+✅ Loaded plugin: _antiprivado.js
+✅ Loaded plugin: _antiver.js
+✅ Loaded plugin: _audio.js
+✅ Loaded plugin: _autoaceptar.js
+✅ Loaded plugin: _autopost.js
+✅ Loaded plugin: _autorechazar.js
+✅ Loaded plugin: _bot-audios.js
+✅ Loaded plugin: _cmdwhitmedia.js
+✅ Loaded plugin: _fakeReply.js
+✅ Loaded plugin: _get.js
+✅ Loaded plugin: _modoAdmin.js
+✅ Loaded plugin: _pack.js
+✅ Loaded plugin: _simi.js
+✅ Loaded plugin: _tiktokvalle.js
+✅ Loaded plugin: _tools-read.js
+✅ Loaded plugin: _welcome.js
+✅ Loaded plugin: afk-afk.js
+✅ Loaded plugin: ai-fux.js
+✅ Loaded plugin: anime-messi.js
+✅ Loaded plugin: anime-ronaldo.js
+✅ Loaded plugin: antifakes.js
+✅ Loaded plugin: antilinkxxx.js
+✅ Loaded plugin: audios-efectos.js
+✅ Loaded plugin: barboza-antifakes.js
+✅ Loaded plugin: barboza-tiktok2.js
+✅ Loaded plugin: barboza-tiktok_mp3.js
+✅ Loaded plugin: barboza-wikipedia.js
+✅ Loaded plugin: barbozx-ytmp4.js
+✅ Loaded plugin: barbozx.tourl.js
+✅ Loaded plugin: buscador-igstalk.js
+✅ Loaded plugin: buscador-playstore.js
+✅ Loaded plugin: buscador-pornohub.js
+✅ Loaded plugin: buscador-ttsearch.js
+✅ Loaded plugin: buscador-yts.js
+✅ Loaded plugin: buscador.js
+✅ Loaded plugin: buscardor-Yaho.js
+✅ Loaded plugin: buscardor-mercadolibre.js
+✅ Loaded plugin: cmd-add.js
+✅ Loaded plugin: descarga-xvideosdl.js
+✅ Loaded plugin: descargar-imagen.js
+✅ Loaded plugin: descargar-threads.js
+✅ Loaded plugin: descargar-tik.js
+✅ Loaded plugin: descargar-tksearch.js
+✅ Loaded plugin: descargas-anime.js
+✅ Loaded plugin: descargas-artis.js
+✅ Loaded plugin: descargas-capcut.js
+✅ Loaded plugin: descargas-gitclone.js
+✅ Loaded plugin: descargas-happymod.js
+✅ Loaded plugin: descargas-igstory.js
+✅ Loaded plugin: descargas-infoanime.js
+✅ Loaded plugin: descargas-likee.js
+✅ Loaded plugin: descargas-mega.js
+✅ Loaded plugin: descargas-peliculas.js
+✅ Loaded plugin: descargas-pelisplus.js
+✅ Loaded plugin: descargas-play1.js
+✅ Loaded plugin: descargas-play3.js
+✅ Loaded plugin: descargas-play4.js
+✅ Loaded plugin: descargas-playlist.js
+✅ Loaded plugin: descargas-tiktok.js
+✅ Loaded plugin: descargas-tiktok_mp3.js
+✅ Loaded plugin: descargas-tiktokdl.js
+✅ Loaded plugin: descargas-tiktokfrases.js
+✅ Loaded plugin: descargas-tiktokhd.js
+✅ Loaded plugin: descargas-tiktokhot.js
+✅ Loaded plugin: descargas-tiktokmusic.js
+✅ Loaded plugin: descargas-tiktokuser.js
+✅ Loaded plugin: descargas-tw.js
+✅ Loaded plugin: descargas-tweetposts.js
+✅ Loaded plugin: descargas-xnxxdl.js
+✅ Loaded plugin: descargas-xvideosearch.js
+✅ Loaded plugin: descargas-ytmp3.js
+✅ Loaded plugin: descargas-ytmp3doc.js
+✅ Loaded plugin: descargas-ytmp4doc.js
+✅ Loaded plugin: descargas_pin.js
+✅ Loaded plugin: dl-instagram.js
+✅ Loaded plugin: donar-sala.js
+✅ Loaded plugin: downlader-spotify.js
+✅ Loaded plugin: downloader-apk2.js
+✅ Loaded plugin: downloader-apkdl.js
+✅ Loaded plugin: downloader-facebook.js
+✅ Loaded plugin: downloader-mediafire.js
+✅ Loaded plugin: downloader-mediafire2.js
+✅ Loaded plugin: downloader-playmp4.js
+✅ Loaded plugin: downloader-soundcloud.js
+✅ Loaded plugin: downloader-spotify2.js
+✅ Loaded plugin: downloader-tiktok.js
+✅ Loaded plugin: downloader-yt_play.js
+✅ Loaded plugin: downloader-ytmp4.js
+✅ Loaded plugin: downloader-ytv.js
+✅ Loaded plugin: enable.js
+✅ Loaded plugin: ff-12vs12.js
+✅ Loaded plugin: ff-16vs16.js
+✅ Loaded plugin: ff-20vs20.js
+✅ Loaded plugin: ff-24vs24.js
+✅ Loaded plugin: ff-4vs4.js
+✅ Loaded plugin: ff-6vs6.js
+✅ Loaded plugin: ff-8vs8.js
+✅ Loaded plugin: ff-cuadrilatero.js
+✅ Loaded plugin: ff-guerra.js
+✅ Loaded plugin: ff-internav4.js
+✅ Loaded plugin: ff-kalahari.js
+✅ Loaded plugin: ff-nextera.js
+✅ Loaded plugin: ff-pvp.js
+✅ Loaded plugin: ff-reglaslideres.js
+✅ Loaded plugin: ff-reglaslideres2.js
+✅ Loaded plugin: ff-scrim.js
+✅ Loaded plugin: ff-stalk.js
+✅ Loaded plugin: formar-nv.js
+✅ Loaded plugin: fun-_afk.js
+✅ Loaded plugin: fun-acariciar-.js
+✅ Loaded plugin: fun-adoptada.js
+✅ Loaded plugin: fun-adoptado.js
+✅ Loaded plugin: fun-alienigena.js
+✅ Loaded plugin: fun-aliens.js
+✅ Loaded plugin: fun-amigo-random.js
+✅ Loaded plugin: fun-asaldo.js
+✅ Loaded plugin: fun-asustar.js
+✅ Loaded plugin: fun-bataemoji.js
+✅ Loaded plugin: fun-batallachef.js
+✅ Loaded plugin: fun-calculador.js
+✅ Loaded plugin: fun-careani.js
+✅ Loaded plugin: fun-carrera.js
+✅ Loaded plugin: fun-cazar.js
+✅ Loaded plugin: fun-chaqueta.js
+✅ Loaded plugin: fun-chefexterno.js
+✅ Loaded plugin: fun-chefloco.js
+✅ Loaded plugin: fun-chistes.js
+✅ Loaded plugin: fun-consejo.js
+✅ Loaded plugin: fun-consultor.js
+✅ Loaded plugin: fun-darcoins.js
+✅ Loaded plugin: fun-detective.js
+✅ Loaded plugin: fun-doxeo.js
+✅ Loaded plugin: fun-escape.js
+✅ Loaded plugin: fun-factos.js
+✅ Loaded plugin: fun-follar.js
+✅ Loaded plugin: fun-formarpareja.js
+✅ Loaded plugin: fun-formarparejas5.js
+✅ Loaded plugin: fun-formartrio.js
+✅ Loaded plugin: fun-foto.js
+✅ Loaded plugin: fun-frases.js
+✅ Loaded plugin: fun-gamer.js
+✅ Loaded plugin: fun-gamer2.js
+✅ Loaded plugin: fun-gamer3.js
+✅ Loaded plugin: fun-gamer4.js
+✅ Loaded plugin: fun-gay.js
+✅ Loaded plugin: fun-gay2.js
+✅ Loaded plugin: fun-gladiador.js
+✅ Loaded plugin: fun-gordopantene.js
+✅ Loaded plugin: fun-gordoteton.js
+✅ Loaded plugin: fun-huevo.js
+✅ Loaded plugin: fun-insulto.js
+✅ Loaded plugin: fun-kachero.js
+✅ Loaded plugin: fun-kiss.js
+✅ Loaded plugin: fun-locura2.js
+✅ Loaded plugin: fun-love.js
+✅ Loaded plugin: fun-madrid.js
+✅ Loaded plugin: fun-magia.js
+✅ Loaded plugin: fun-malentin.js
+✅ Loaded plugin: fun-mamaguevo.js
+✅ Loaded plugin: fun-marry.js
+✅ Loaded plugin: fun-mate.js
+✅ Loaded plugin: fun-memes.js
+✅ Loaded plugin: fun-memoria.js
+✅ Loaded plugin: fun-morse.js
+✅ Loaded plugin: fun-multiverso.js
+✅ Loaded plugin: fun-negra.js
+✅ Loaded plugin: fun-octavos.js
+✅ Loaded plugin: fun-paja.js
+✅ Loaded plugin: fun-pelea.js
+✅ Loaded plugin: fun-perra.js
+✅ Loaded plugin: fun-personalidad.js
+✅ Loaded plugin: fun-peruana.js
+✅ Loaded plugin: fun-peruano.js
+✅ Loaded plugin: fun-piropos.js
+✅ Loaded plugin: fun-poesia.js
+✅ Loaded plugin: fun-postres.js
+✅ Loaded plugin: fun-pregunta.js
+✅ Loaded plugin: fun-reacciones.js
+✅ Loaded plugin: fun-receta.js
+✅ Loaded plugin: fun-regalo.js
+✅ Loaded plugin: fun-reto.js
+✅ Loaded plugin: fun-robot.js
+✅ Loaded plugin: fun-sapa.js
+✅ Loaded plugin: fun-sapo.js
+✅ Loaded plugin: fun-simi.js
+✅ Loaded plugin: fun-sinculo.js
+✅ Loaded plugin: fun-sinpito.js
+✅ Loaded plugin: fun-sintetas.js
+✅ Loaded plugin: fun-sorteo.js
+✅ Loaded plugin: fun-speed.js
+✅ Loaded plugin: fun-super.js
+✅ Loaded plugin: fun-top.js
+✅ Loaded plugin: fun-verdad.js
+✅ Loaded plugin: fun-yuri.js
+✅ Loaded plugin: fun-zodiac.js
+✅ Loaded plugin: fun-zombie.js
+✅ Loaded plugin: fun-zorra.js
+✅ Loaded plugin: game-acertijo.js
+✅ Loaded plugin: game-acertijo_resp.js
+✅ Loaded plugin: game-adivina.js
+✅ Loaded plugin: game-ahorcado.js
+✅ Loaded plugin: game-ppt.js
+✅ Loaded plugin: game-ruleta.js
+✅ Loaded plugin: game-ruletaldelban.js
+✅ Loaded plugin: game-slot.js
+✅ Loaded plugin: game-sopa_de_letras.js
+✅ Loaded plugin: game-suitpvp.js
+✅ Loaded plugin: gamer-casino.js
+✅ Loaded plugin: gc-config_time.js
+✅ Loaded plugin: gemini-ai.js
+✅ Loaded plugin: girsl.js
+✅ Loaded plugin: group-agregar.js
+✅ Loaded plugin: group-banchat.js
+✅ Loaded plugin: group-canal.js
+✅ Loaded plugin: group-chetaruser.js
+✅ Loaded plugin: group-config.js
+✅ Loaded plugin: group-crear.js
+✅ Loaded plugin: group-delete.js
+✅ Loaded plugin: group-demote.js
+✅ Loaded plugin: group-fantasmas.js
+✅ Loaded plugin: group-gcdescripción.js
+✅ Loaded plugin: group-groupinfo.js
+✅ Loaded plugin: group-guia.js
+✅ Loaded plugin: group-hidetag.js
+✅ Loaded plugin: group-link.js
+✅ Loaded plugin: group-listanum.js
+✅ Loaded plugin: group-mute.js
+✅ Loaded plugin: group-poll.js
+✅ Loaded plugin: group-precios2.js
+✅ Loaded plugin: group-promote.js
+✅ Loaded plugin: group-resetlink.js
+✅ Loaded plugin: group-setbye.js
+✅ Loaded plugin: group-setname.js
+✅ Loaded plugin: group-setwelcome.js
+✅ Loaded plugin: group-sorteo.js
+✅ Loaded plugin: group-sugerir.js
+✅ Loaded plugin: group-sulap.js
+✅ Loaded plugin: group-tagall.js
+✅ Loaded plugin: group-unbanchat.js
+✅ Loaded plugin: group-unbanurse.js
+✅ Loaded plugin: group.banchat.js
+✅ Loaded plugin: grupo-admins.js
+✅ Loaded plugin: grupo-delete.js
+✅ Loaded plugin: grupo-invitar.js
+✅ Loaded plugin: grupo-kick.js
+✅ Loaded plugin: herramientas-ssweb.js
+✅ Loaded plugin: herramientas-whatmusic.js
+✅ Loaded plugin: i.js
+✅ Loaded plugin: ia-animagine.js
+✅ Loaded plugin: ia-blackboxia.js
+✅ Loaded plugin: ia-botai.js
+✅ Loaded plugin: ia-chatai.js
+✅ Loaded plugin: ia-ia2.js
+✅ Loaded plugin: ia-wpm.js
+✅ Loaded plugin: img-neko.js
+✅ Loaded plugin: img-pinterest.js
+✅ Loaded plugin: img-waifu.js
+✅ Loaded plugin: info-bot.js
+✅ Loaded plugin: info-estado.js
+✅ Loaded plugin: info-horario.js
+✅ Loaded plugin: info-infobot.js
+✅ Loaded plugin: info-newcommand.js
+✅ Loaded plugin: info-not.js
+✅ Loaded plugin: info-pais.js
+✅ Loaded plugin: info-ping.js
+✅ Loaded plugin: info-sistema.js
+✅ Loaded plugin: info-sugerencia2.js
+✅ Loaded plugin: info-yes.js
+✅ Loaded plugin: isnpeccionar.js
+✅ Loaded plugin: logos-willzek.js
+✅ Loaded plugin: main-allfake.js
+✅ Loaded plugin: main-catmenu.js
+✅ Loaded plugin: main-comunidad.js
+✅ Loaded plugin: main-creator.js
+✅ Loaded plugin: main-grupos.js
+✅ Loaded plugin: main-menu.js
+✅ Loaded plugin: main-menu2.js
+✅ Loaded plugin: main-menu3.js
+✅ Loaded plugin: main-menu4.js
+✅ Loaded plugin: main-runtime.js
+✅ Loaded plugin: main-totalfunciones.js
+✅ Loaded plugin: mapa-neXTerra.js
+✅ Loaded plugin: mapa-purgatorio.js
+✅ Loaded plugin: mapas-Alpes.js
+✅ Loaded plugin: mapas-Bermuda.js
+✅ Loaded plugin: menu-ai.js
+✅ Loaded plugin: menu-anime.js
+✅ Loaded plugin: menu-audio.js
+✅ Loaded plugin: menu-categories.js
+✅ Loaded plugin: menu-downloads.js
+✅ Loaded plugin: menu-freefire.js
+✅ Loaded plugin: menu-fun.js
+✅ Loaded plugin: menu-group.js
+✅ Loaded plugin: menu-hot.js
+✅ Loaded plugin: menu-image.js
+✅ Loaded plugin: menu-info.js
+✅ Loaded plugin: menu-labiblia.js
+✅ Loaded plugin: menu-nsfw.js
+✅ Loaded plugin: menu-owner.js
+✅ Loaded plugin: menu-pets.js
+✅ Loaded plugin: menu-premium.js
+✅ Loaded plugin: menu-random.js
+✅ Loaded plugin: menu-registration.js
+✅ Loaded plugin: menu-rpg.js
+✅ Loaded plugin: menu-search.js
+✅ Loaded plugin: menu-stalking.js
+✅ Loaded plugin: menu-subbots.js
+✅ Loaded plugin: menu-tools.js
+✅ Loaded plugin: nsfw-nsfw.js
+✅ Loaded plugin: nsfw-packxxx.js
+✅ Loaded plugin: nsfw-r34.js
+✅ Loaded plugin: nsfw-videoxxxlesbi.js
+✅ Loaded plugin: nsfw.js
+✅ Loaded plugin: owner-DeathNote.js
+✅ Loaded plugin: owner-addcorazones.js
+✅ Loaded plugin: owner-addowner.js
+✅ Loaded plugin: owner-addprem.js
+✅ Loaded plugin: owner-addpremsubbots.js
+✅ Loaded plugin: owner-anadirlimit.js
+✅ Loaded plugin: owner-autoadmin.js
+✅ Loaded plugin: owner-banlist.js
+✅ Loaded plugin: owner-chetar.js
+✅ Loaded plugin: owner-del-add.js
+✅ Loaded plugin: owner-deleteplugin.js
+✅ Loaded plugin: owner-delpremsub.js
+✅ Loaded plugin: owner-dsowner.js
+✅ Loaded plugin: owner-emotag.js
+✅ Loaded plugin: owner-grouplist.js
+✅ Loaded plugin: owner-join.js
+✅ Loaded plugin: owner-online.js
+✅ Loaded plugin: owner-prefix.js
+✅ Loaded plugin: owner-reporte.js
+✅ Loaded plugin: owner-reunion.js
+✅ Loaded plugin: owner-salir.js
+✅ Loaded plugin: owner-saveplungin.js
+✅ Loaded plugin: owner-setmoneda.js
+✅ Loaded plugin: owner-spam2.js
+✅ Loaded plugin: owner-update.js
+✅ Loaded plugin: pack2.js
+✅ Loaded plugin: phactive.js
+✅ Loaded plugin: phcategories.js
+✅ Loaded plugin: phhelp.js
+✅ Loaded plugin: phinfo.js
+✅ Loaded plugin: phrelated.js
+✅ Loaded plugin: phsearch.js
+✅ Loaded plugin: phsearchby.js
+✅ Loaded plugin: phsearchtags.js
+✅ Loaded plugin: phstars.js
+✅ Loaded plugin: phstats.js
+✅ Loaded plugin: phtags.js
+✅ Loaded plugin: phtrending.js
+✅ Loaded plugin: phvideo.js
+✅ Loaded plugin: pornhub.js
+✅ Loaded plugin: reg-setbirth.js
+✅ Loaded plugin: reg-setdescrip.js
+✅ Loaded plugin: reg-setgene.js
+✅ Loaded plugin: reg-tuto.js
+✅ Loaded plugin: rg-perfil.js
+✅ Loaded plugin: rg-perfildates.js
+✅ Loaded plugin: rg-reg.js
+✅ Loaded plugin: rg-unreg.js
+✅ Loaded plugin: rpg-IB.js
+✅ Loaded plugin: rpg-anuual.js
+✅ Loaded plugin: rpg-aventura.js
+✅ Loaded plugin: rpg-batalla.js
+✅ Loaded plugin: rpg-berburu.js
+✅ Loaded plugin: rpg-biblia.js
+✅ Loaded plugin: rpg-buy.js
+✅ Loaded plugin: rpg-caramelos.js
+✅ Loaded plugin: rpg-chekarti.js
+✅ Loaded plugin: rpg-chetarki.js
+✅ Loaded plugin: rpg-claim.js
+✅ Loaded plugin: rpg-claim3.js
+✅ Loaded plugin: rpg-cofresema.js
+✅ Loaded plugin: rpg-confesion.js
+✅ Loaded plugin: rpg-crimen.js
+✅ Loaded plugin: rpg-dardiamantes.js
+✅ Loaded plugin: rpg-dardolares.js
+✅ Loaded plugin: rpg-dardulces.js
+✅ Loaded plugin: rpg-darxp.js
+✅ Loaded plugin: rpg-dayli.js
+✅ Loaded plugin: rpg-dulces.js
+✅ Loaded plugin: rpg-excavar.js
+✅ Loaded plugin: rpg-explorar.js
+✅ Loaded plugin: rpg-ganarmonedas.js
+✅ Loaded plugin: rpg-halloween.js
+✅ Loaded plugin: rpg-heal.js
+✅ Loaded plugin: rpg-inventario.js
+✅ Loaded plugin: rpg-ki.js
+✅ Loaded plugin: rpg-level.js
+✅ Loaded plugin: rpg-levelup.js
+✅ Loaded plugin: rpg-masc.js
+✅ Loaded plugin: rpg-mensual.js
+✅ Loaded plugin: rpg-minar.js
+✅ Loaded plugin: rpg-paseo.js
+✅ Loaded plugin: rpg-quitardulces.js
+✅ Loaded plugin: rpg-quitarmonedas.js
+✅ Loaded plugin: rpg-quitarxp.js
+✅ Loaded plugin: rpg-reenvia.js
+✅ Loaded plugin: rpg-respuesta.js
+✅ Loaded plugin: rpg-retirar.js
+✅ Loaded plugin: rpg-rf.js
+✅ Loaded plugin: rpg-topmascota.js
+✅ Loaded plugin: rpg-viajar.js
+✅ Loaded plugin: rpg-weekly.js
+✅ Loaded plugin: ruleta-muerte.js
+✅ Loaded plugin: s.js
+✅ Loaded plugin: s2.js
+✅ Loaded plugin: s3.js
+✅ Loaded plugin: search-imagen.js
+✅ Loaded plugin: search-pornohub.js
+✅ Loaded plugin: search-spotify.js
+✅ Loaded plugin: search-tiktoksearch.js
+✅ Loaded plugin: search-xnxxsearch.js
+✅ Loaded plugin: serbot-bots.js
+✅ Loaded plugin: serbot-primary.js
+✅ Loaded plugin: serbot-serbot.js
+✅ Loaded plugin: sticker-pfp.js
+✅ Loaded plugin: sticker-qc.js
+✅ Loaded plugin: sticker-scat.js
+✅ Loaded plugin: sticker-sticker.js
+✅ Loaded plugin: sticker-wm.js
+✅ Loaded plugin: stiker-emojimix.js
+✅ Loaded plugin: test-install.js
+✅ Loaded plugin: tools-auto.js
+✅ Loaded plugin: tools-autopost.js
+✅ Loaded plugin: tools-balogo.js
+✅ Loaded plugin: tools-barbozai.js
+✅ Loaded plugin: tools-brat.js
+✅ Loaded plugin: tools-bratvideo.js
+✅ Loaded plugin: tools-clima.js
+✅ Loaded plugin: tools-delete.js
+✅ Loaded plugin: tools-demo.js
+✅ Loaded plugin: tools-fake.js
+✅ Loaded plugin: tools-fakengl.js
+✅ Loaded plugin: tools-feo.js
+✅ Loaded plugin: tools-group.js
+✅ Loaded plugin: tools-hd.js
+✅ Loaded plugin: tools-hd2.js
+✅ Loaded plugin: tools-iggblox.js
+✅ Loaded plugin: tools-imgg.js
+✅ Loaded plugin: tools-inspect.js
+✅ Loaded plugin: tools-letra.js
+✅ Loaded plugin: tools-menu.js
+✅ Loaded plugin: tools-menujuegos.js
+✅ Loaded plugin: tools-n.js
+✅ Loaded plugin: tools-newname.js
+✅ Loaded plugin: tools-pre.js
+✅ Loaded plugin: tools-rc.js
+✅ Loaded plugin: tools-re.js
+✅ Loaded plugin: tools-reacht.js
+✅ Loaded plugin: tools-removebg.js
+✅ Loaded plugin: tools-revi.js
+✅ Loaded plugin: tools-revsall.js
+✅ Loaded plugin: tools-setbanner.js
+✅ Loaded plugin: tools-setmenu.js
+✅ Loaded plugin: tools-sintaxis.js
+✅ Loaded plugin: tools-stikerly.js
+✅ Loaded plugin: tools-tourl.js
+✅ Loaded plugin: tools-tts.js
+✅ Loaded plugin: tools.tourl2.js
+✅ Loaded plugin: toosl-tomp3.js
+✅ Loaded plugin: youtube-ytmp4doc.js
+🔌 Total plugins loaded: 470
+✅ Telegram Bot Connected Successfully!

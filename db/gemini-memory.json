@@ -1,0 +1,139 @@
+{
+  "users": {
+    "1538110126": {
+      "conversations": [
+        {
+          "role": "user",
+          "content": "Hello",
+          "timestamp": 1756084980814
+        },
+        {
+          "role": "assistant",
+          "content": "Hello there! How can I help you today?\n",
+          "timestamp": 1756084980816
+        },
+        {
+          "role": "user",
+          "content": "Who are you?",
+          "timestamp": 1756085002860
+        },
+        {
+          "role": "assistant",
+          "content": "I'm Gemini, a helpful AI assistant.  I have a persistent memory of our conversations, so I'll remember everything we discuss.  I'm designed to be helpful, accurate, and engaging.  How can I assist you further?\n",
+          "timestamp": 1756085002863
+        },
+        {
+          "role": "user",
+          "content": "What is the first question I asked you?",
+          "timestamp": 1756085061281
+        },
+        {
+          "role": "assistant",
+          "content": "Your first question was \"Hello\".\n",
+          "timestamp": 1756085061283
+        },
+        {
+          "role": "user",
+          "content": "write a text with several periods",
+          "timestamp": 1756257744720
+        },
+        {
+          "role": "assistant",
+          "content": "The sun is shining. The birds are singing.  It's a beautiful day.  Perfect for a picnic.  Or a nap.  Or both.\n",
+          "timestamp": 1756257744724
+        },
+        {
+          "role": "user",
+          "content": "more text with several periods",
+          "timestamp": 1756257783695
+        },
+        {
+          "role": "assistant",
+          "content": "The old house stood on a hill.  Creaking timbers groaned in the wind.  Dust motes danced in the sunbeams.  A single, dusty window stared blankly out.  Years of silence had settled within its walls.  Secrets whispered from the shadows.  A forgotten history lay buried beneath the floorboards.  The key was lost.  The past remained.\n",
+          "timestamp": 1756257783698
+        },
+        {
+          "role": "user",
+          "content": "What's the weather like today in Morocco Khenifra?",
+          "timestamp": 1756480508597
+        },
+        {
+          "role": "assistant",
+          "content": "I do not have access to real-time information, including live weather updates. To get the current weather in Khenifra, Morocco, I recommend checking a reliable weather website or app such as Google Weather, AccuWeather, or a similar service.\n",
+          "timestamp": 1756480508599
+        }
+      ],
+      "preferences": {
+        "language": "English",
+        "personality": "helpful",
+        "context_window": 10
+      },
+      "last_interaction": 1756480508599
+    },
+    "test_user_123": {
+      "conversations": [
+        {
+          "role": "user",
+          "content": "Test message 11",
+          "timestamp": 1756083523912
+        },
+        {
+          "role": "assistant",
+          "content": "Test response 11",
+          "timestamp": 1756083523914
+        },
+        {
+          "role": "user",
+          "content": "Test message 12",
+          "timestamp": 1756083523915
+        },
+        {
+          "role": "assistant",
+          "content": "Test response 12",
+          "timestamp": 1756083523917
+        },
+        {
+          "role": "user",
+          "content": "Test message 13",
+          "timestamp": 1756083523919
+        },
+        {
+          "role": "assistant",
+          "content": "Test response 13",
+          "timestamp": 1756083523921
+        },
+        {
+          "role": "user",
+          "content": "Test message 14",
+          "timestamp": 1756083523923
+        },
+        {
+          "role": "assistant",
+          "content": "Test response 14",
+          "timestamp": 1756083523925
+        },
+        {
+          "role": "user",
+          "content": "Test message 15",
+          "timestamp": 1756083523928
+        },
+        {
+          "role": "assistant",
+          "content": "Test response 15",
+          "timestamp": 1756083523929
+        }
+      ],
+      "preferences": {
+        "language": "English",
+        "personality": "creative",
+        "context_window": 5
+      },
+      "last_interaction": 1756083523930
+    }
+  },
+  "metadata": {
+    "created": "2025-01-21T00:00:00.000Z",
+    "version": "1.0.0",
+    "description": "Gemini AI Assistant Memory Database"
+  }
+}
